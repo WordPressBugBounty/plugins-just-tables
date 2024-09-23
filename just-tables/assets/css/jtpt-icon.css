@@ -1,0 +1,134 @@
+/*
+Icon styles.
+
+Table of contents:
+==================
+1. Init
+2. Icons
+*/
+
+/* 1. Init
+======================================================= */
+@font-face {
+    font-family: 'jtpt-icon';
+    src:
+        url( '../fonts/jtpt-icon/jtpt-icon.ttf?52tue2' ) format( 'truetype' ),
+        url( '../fonts/jtpt-icon/jtpt-icon.woff?52tue2' ) format( 'woff' ),
+        url( '../fonts/jtpt-icon/jtpt-icon.svg?52tue2#jtpt-icon' ) format( 'svg' );
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+.jtpt-icon {
+    font-family: 'jtpt-icon' !important; /* use !important to prevent issues with browser extensions that change fonts */
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; /* Better Font Rendering */
+    -moz-osx-font-smoothing: grayscale; /* Better Font Rendering */
+}
+
+/* 2. Icons
+======================================================= */
+.jtpt-icon-angle-up:before {
+    content: "\e101";
+}
+.jtpt-icon-angle-up-light:before {
+    content: "\e102";
+}
+.jtpt-icon-angle-down:before {
+    content: "\e103";
+}
+.jtpt-icon-angle-down-light:before {
+    content: "\e104";
+}
+.jtpt-icon-angle-left:before {
+    content: "\e105";
+}
+.jtpt-icon-angle-left-light:before {
+    content: "\e106";
+}
+.jtpt-icon-angle-right:before {
+    content: "\e107";
+}
+.jtpt-icon-angle-right-light:before {
+    content: "\e108";
+}
+.jtpt-icon-square:before {
+    content: "\e109";
+}
+.jtpt-icon-square-light:before {
+    content: "\e110";
+}
+.jtpt-icon-check-square:before {
+    content: "\e111";
+}
+.jtpt-icon-check-square-light:before {
+    content: "\e112";
+}
+.jtpt-icon-search:before {
+    content: "\e113";
+}
+.jtpt-icon-search-light:before {
+    content: "\e114";
+}
+.jtpt-icon-filter:before {
+    content: "\e115";
+}
+.jtpt-icon-filter-light:before {
+    content: "\e116";
+}
+.jtpt-icon-shopping-cart:before {
+    content: "\e117";
+}
+.jtpt-icon-shopping-cart-light:before {
+    content: "\e118";
+}
+.jtpt-icon-shopping-cart-plus:before {
+    content: "\e119";
+}
+.jtpt-icon-shopping-cart-plus-light:before {
+    content: "\e120";
+}
+.jtpt-icon-heart:before {
+    content: "\e121";
+}
+.jtpt-icon-heart-light:before {
+    content: "\e122";
+}
+.jtpt-icon-heart-solid:before {
+    content: "\e123";
+}
+.jtpt-icon-sliders:before {
+    content: "\e124";
+}
+.jtpt-icon-sliders-light:before {
+    content: "\e125";
+}
+.jtpt-icon-plus:before {
+    content: "\e126";
+}
+.jtpt-icon-plus-light:before {
+    content: "\e127";
+}
+.jtpt-icon-minus:before {
+    content: "\e128";
+}
+.jtpt-icon-minus-light:before {
+    content: "\e129";
+}
+.jtpt-icon-sync:before {
+    content: "\e130";
+}
+.jtpt-icon-sync-light:before {
+    content: "\e131";
+}
+.jtpt-icon-spinner:before {
+    content: "\e132";
+}
+.jtpt-icon-spinner-light:before {
+    content: "\e133";
+}

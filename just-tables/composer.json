@@ -1,0 +1,23 @@
+{
+    "name": "hasthemes/just-tables",
+    "description": "WooCommerce Product Table",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "HasThemes",
+            "email": "nazmulhuda@hastechit.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "JustTables\\": "includes/"
+        },
+        "files": [
+            "includes/functions.php",
+            "includes/ajax-processing.php",
+            "includes/ajax-actions.php"
+        ]
+    }
+}
