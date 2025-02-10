@@ -3,7 +3,7 @@
  * Plugin Name: JustTables - WooCommerce Product Table
  * Plugin URI: https://hasthemes.com/wp/justtables/
  * Description: Display WooCommerce products as table.
- * Version: 1.6.1
+ * Version: 1.6.2
  * Author: HasThemes
  * Author URI: https://hasthemes.com
  * License: GPL v2 or later
@@ -13,7 +13,7 @@
  * Requires at least: 5.0
  * Tested up to: 6.7
  * WC requires at least: 4.0
- * WC tested up to: 9.4.3
+ * WC tested up to: 9.6.1
  */
 
 // If this file is accessed directly, exit.
@@ -36,7 +36,7 @@ if ( ! class_exists( 'JustTables' ) ) {
 	     *
 	     * @var string $version
 	     */
-		public $version = '1.6.1';
+		public $version = '1.6.2';
 
 		/**
 		 * The single instance of the class.

@@ -69,7 +69,7 @@ function jtpt_ajax_wrong_quantity_notice() {
         );
     }
 
-    printf( '<div class="woocommerce-error" role="alert">%s</div>', $notice );
+    printf( '<div class="woocommerce-error" role="alert">%s</div>', wp_kses_post($notice) );
 
     wp_die();
 }
@@ -97,7 +97,7 @@ function jtpt_ajax_variation_selection_needed_notice() {
         esc_html( $product_title )
     );
 
-    printf( '<div class="woocommerce-error" role="alert">%s</div>', $notice );
+    printf( '<div class="woocommerce-error" role="alert">%s</div>', wp_kses_post($notice) );
 
     wp_die();
 }
@@ -136,7 +136,7 @@ function jtpt_ajax_disable_checkbox_notice() {
         );
     }
 
-    printf( '<div class="woocommerce-error" role="alert">%s</div>', $notice );
+    printf( '<div class="woocommerce-error" role="alert">%s</div>', wp_kses_post($notice) );
 
     wp_die();
 }
@@ -157,7 +157,7 @@ function jtpt_ajax_products_selection_needed_notice() {
 
     $notice = esc_html__( 'Please select one or more product using checkbox to add to the cart.', 'just-tables' );
 
-    printf( '<div class="woocommerce-error" role="alert">%s</div>', $notice );
+    printf( '<div class="woocommerce-error" role="alert">%s</div>', wp_kses_post($notice) );
 
     wp_die();
 }

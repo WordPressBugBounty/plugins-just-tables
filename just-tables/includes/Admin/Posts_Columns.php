@@ -60,7 +60,7 @@ class Posts_Columns {
 			}
 		}
 
-		echo $shortcode;
+		echo wp_kses_post($shortcode);
 	}
 
 }
