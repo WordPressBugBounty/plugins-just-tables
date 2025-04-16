@@ -25,7 +25,7 @@ class Just_Table_Recomendation{
      * [__construct] Class construct
      */
     function __construct() {
-    	$this->plugin_recommendations();
+		add_action('init', [$this, 'plugin_recommendations']);
     }
 
 	 /**
