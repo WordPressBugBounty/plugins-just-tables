@@ -3,7 +3,7 @@
  * Plugin Name: JustTables - WooCommerce Product Table
  * Plugin URI: https://hasthemes.com/wp/justtables/
  * Description: Display WooCommerce products as table.
- * Version: 1.6.3
+ * Version: 1.6.4
  * Author: HasThemes
  * Author URI: https://hasthemes.com
  * License: GPL v2 or later
@@ -36,7 +36,7 @@ if ( ! class_exists( 'JustTables' ) ) {
 	     *
 	     * @var string $version
 	     */
-		public $version = '1.6.3';
+		public $version = '1.6.4';
 
 		/**
 		 * The single instance of the class.
@@ -216,7 +216,9 @@ if ( ! class_exists( 'JustTables' ) ) {
 	            }
 
 	            $activation_url = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $woocommerce . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $woocommerce );
-	            $message = sprintf( esc_html__( '%1$sJustTables - WooCommerce Product Table%2$s requires %1$s"WooCommerce"%2$s plugin to be active. Please activate WooCommerce to continue.', 'just-tables' ), '<strong>', '</strong>');
+	            $message = sprintf( 
+                /* translators: %1$s: Strong Tag, %2$s: Strong Tag */
+                esc_html__( '%1$sJustTables - WooCommerce Product Table%2$s requires %1$s"WooCommerce"%2$s plugin to be active. Please activate WooCommerce to continue.', 'just-tables' ), '<strong>', '</strong>');
 	            $button_text = esc_html__( 'Activate WooCommerce', 'just-tables' );
 	        } else {
 	            if( ! current_user_can( 'activate_plugins' ) ) {
@@ -224,7 +226,9 @@ if ( ! class_exists( 'JustTables' ) ) {
 	            }
 
 	            $activation_url = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=woocommerce' ), 'install-plugin_woocommerce' );
-	            $message = sprintf( esc_html__( '%1$sJustTables - WooCommerce Product Table%2$s requires %1$s"WooCommerce"%2$s plugin to be installed and activated. Please install WooCommerce to continue.', 'just-tables' ), '<strong>', '</strong>' );
+	            $message = sprintf( 
+					/* translators: %1$s: Strong Tag, %2$s: Strong Tag */
+					esc_html__( '%1$sJustTables - WooCommerce Product Table%2$s requires %1$s"WooCommerce"%2$s plugin to be installed and activated. Please install WooCommerce to continue.', 'just-tables' ), '<strong>', '</strong>' );
 	            $button_text = esc_html__( 'Install WooCommerce', 'just-tables' );
 	        }
 	        $button = '<p><a href="' . esc_url( $activation_url ) . '" class="button-primary">' . $button_text . '</a></p>';

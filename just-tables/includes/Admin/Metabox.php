@@ -776,7 +776,7 @@ class Metabox {
 						 * 9: Custom Taxonomy column name.
 						 * 10: YITH WooCommerce Quick View plugin name and URL of WordPress.org Repository.
 						 */
-						esc_html__( '%1$s column requires the %2$s plugin, %3$s column requires the %4$s plugin and %5$s column requires the %6$s plugin to be installed and activated in order to work.' ) . '<br>' . esc_html__( 'For %7$s column you may use %8$s plugin and for %9$s column you may use %10$s plugin. Besides there are lot of plugin available.', 'just-tables' ),
+						esc_html__( '%1$s column requires the %2$s plugin, %3$s column requires the %4$s plugin and %5$s column requires the %6$s plugin to be installed and activated in order to work.', 'just-tables' ) . '<br>' . esc_html__( 'For %7$s column you may use %8$s plugin and for %9$s column you may use %10$s plugin. Besides there are lot of plugin available.', 'just-tables' ),
 						'<strong>' . esc_html__( 'Wishlist', 'just-tables' ) . '</strong>',
 						'<strong><a href="' . esc_url( 'https://wordpress.org/plugins/wishsuite/' ) . '" target="_blank" rel="noopener">' . esc_html__( 'WishSuite – Wishlist for WooCommerce', 'just-tables' ) . '</a></strong>',
 						'<strong>' . esc_html__( 'Compare', 'just-tables' ) . '</strong>',
@@ -1213,8 +1213,12 @@ class Metabox {
 					'type'     => 'text',
 					'title'    => esc_html__( 'Paginate info text', 'just-tables' ),
 					'subtitle' => esc_html__( 'Provide paginate info text.', 'just-tables' ),
-					'desc'     => sprintf( esc_html__( 'Example: Showing %1$s to %2$s of %3$s entries', 'just-tables' ), '_START_', '_END_', '_TOTAL_' ),
-					'default'  => sprintf( esc_html__( 'Showing %1$s to %2$s of %3$s entries', 'just-tables' ), '_START_', '_END_', '_TOTAL_' ),
+					'desc'     => sprintf( 
+						/* translators: %1$s: Start Entry, %2$s: End Entry, %3$s: Total Entry */
+						esc_html__( 'Example: Showing %1$s to %2$s of %3$s entries', 'just-tables' ), '_START_', '_END_', '_TOTAL_' ),
+					'default'  => sprintf( 
+						/* translators: %1$s: Start Entry, %2$s: End Entry, %3$s: Total Entry */
+						esc_html__( 'Showing %1$s to %2$s of %3$s entries', 'just-tables' ), '_START_', '_END_', '_TOTAL_' ),
 				),
 
 				// Table extra class name.
@@ -1543,8 +1547,12 @@ class Metabox {
 					'type'       => 'text',
 					'title'      => esc_html__( 'Added to cart notice text', 'just-tables' ),
 					'subtitle'   => esc_html__( 'Provide added to cart notice text.', 'just-tables' ),
-					'desc'       => sprintf( esc_html__( 'Example: "%1$s" has been added to your cart. %2$s', 'just-tables' ), '_PRODUCT_TITLE_', '_VIEW_CART_LINK_' ),
-					'default'    => sprintf( esc_html__( '"%1$s" has been added to your cart. %2$s', 'just-tables' ), '_PRODUCT_TITLE_', '_VIEW_CART_LINK_' ),
+					'desc'       => sprintf( 
+						/* translators: %1$s: Product Title, %2$s: View Cart Link */
+						esc_html__( 'Example: "%1$s" has been added to your cart. %2$s', 'just-tables' ), '_PRODUCT_TITLE_', '_VIEW_CART_LINK_' ),
+					'default'    => sprintf( 
+						/* translators: %1$s: Product Title, %2$s: View Cart Link */
+						esc_html__( '"%1$s" has been added to your cart. %2$s', 'just-tables' ), '_PRODUCT_TITLE_', '_VIEW_CART_LINK_' ),
 					'class'    => 'pro-field',
 				),
 

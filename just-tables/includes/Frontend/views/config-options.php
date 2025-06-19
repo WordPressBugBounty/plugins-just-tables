@@ -111,14 +111,22 @@ if ( isset( $product_table_options['in-stock-status-text'] ) && ! empty( trim( $
 if ( isset( $product_table_options['in-stock-with-quantity-status-text'] ) && ! empty( trim( $product_table_options['in-stock-with-quantity-status-text'] ) ) ) {
 	$in_stock_with_quantity_status_text = sanitize_text_field( $product_table_options['in-stock-with-quantity-status-text'] );
 } else {
-	$in_stock_with_quantity_status_text = sprintf( esc_html__( '%1$s in stock', 'just-tables' ), '_QTY_' );
+	$in_stock_with_quantity_status_text = sprintf( 
+		/* translators: %1$s: Quantity */
+		esc_html__( '%1$s in stock', 'just-tables' ), 
+		'_QTY_' 
+	);
 }
 
 // In stock with quantity and backorder status text.
 if ( isset( $product_table_options['in-stock-with-quantity-and-backorder-status-text'] ) && ! empty( trim( $product_table_options['in-stock-with-quantity-and-backorder-status-text'] ) ) ) {
 	$in_stock_with_quantity_and_backorder_status_text = sanitize_text_field( $product_table_options['in-stock-with-quantity-and-backorder-status-text'] );
 } else {
-	$in_stock_with_quantity_and_backorder_status_text = sprintf( esc_html__( '%1$s in stock (can be backordered)', 'just-tables' ), '_QTY_' );
+	$in_stock_with_quantity_and_backorder_status_text = sprintf( 
+		/* translators: %1$s: Quantity */
+		esc_html__( '%1$s in stock (can be backordered)', 'just-tables' ), 
+		'_QTY_' 
+	);
 }
 
 // Out of stock status text.
@@ -173,7 +181,13 @@ $paginate_info = true;
 if ( isset( $product_table_options['paginate-info-text'] ) && ! empty( trim( $product_table_options['paginate-info-text'] ) ) ) {
 	$paginate_info_text = sanitize_text_field( $product_table_options['paginate-info-text'] );
 } else {
-	$paginate_info_text = sprintf( esc_html__( 'Showing %1$s to %2$s of %3$s entries', 'just-tables' ), '_START_', '_END_', '_TOTAL_' );
+	$paginate_info_text = sprintf( 
+		/* translators: %1$s: Start Entry, %2$s: End Entry, %3$s: Total Entry */
+		esc_html__( 'Showing %1$s to %2$s of %3$s entries', 'just-tables' ), 
+		'_START_', 
+		'_END_', 
+		'_TOTAL_' 
+	);
 }
 
 // Paginate scroll to top.

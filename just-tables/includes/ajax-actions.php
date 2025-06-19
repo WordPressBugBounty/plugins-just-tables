@@ -63,7 +63,7 @@ function jtpt_ajax_wrong_quantity_notice() {
     } else {
         $notice = sprintf(
             /* translators: 1: Product title 2: Product stock amount */
-            esc_html__( 'You cannot add that amount of "%1$s" to the cart because there is not enough stock (%2$s remaining).' ),
+            esc_html__( 'You cannot add that amount of "%1$s" to the cart because there is not enough stock (%2$s remaining).', 'just-tables' ),
             esc_html( $product_title ),
             esc_html( $max_quantity )
         );
@@ -194,7 +194,9 @@ function jtpt_ajax_woocommerce_add_to_cart() {
     $table_options = ( is_array( $table_options ) ? $table_options : array() );
 
     $added_to_cart_notice = true;
-    $added_to_cart_notice_text = sprintf( esc_html__( '"%1$s" has been added to your cart. %2$s', 'just-tables' ), '_PRODUCT_TITLE_', '_VIEW_CART_LINK_' );
+    $added_to_cart_notice_text = sprintf( 
+        /* translators: %1$s: Product Title, %2$s: View Cart Link */
+        esc_html__( '"%1$s" has been added to your cart. %2$s', 'just-tables' ), '_PRODUCT_TITLE_', '_VIEW_CART_LINK_' );
 
     if ( isset( $table_options['added-to-cart-notice'] ) ) {
         $added_to_cart_notice = rest_sanitize_boolean( $table_options['added-to-cart-notice'] );

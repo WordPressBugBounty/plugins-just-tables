@@ -472,9 +472,13 @@ class Diagnostic_Data {
      */
     private function show_core_notice() {
 
-        $message_l1 = sprintf( esc_html__( 'At %2$s%1$s%3$s, we prioritize continuous improvement and compatibility. To achieve this, we gather non-sensitive diagnostic information and details about plugin usage. This includes your site\'s URL, the versions of WordPress and PHP you\'re using, and a list of your installed plugins and themes. We also require your email address to provide you with exclusive discount coupons and updates. This data collection is crucial for ensuring that %2$s%1$s%3$s remains up-to-date and compatible with the most widely-used plugins and themes. Rest assured, your privacy is our priority – no spam, guaranteed. %4$sPrivacy Policy%5$s', 'just-tables' ), esc_html( $this->project_name ), '<strong>', '</strong>', '<a target="_blank" href="' . esc_url( $this->privacy_policy ) . '">', '</a>', '<h4 class="justtables-diagnostic-data-title">', '</h4>' );
+        $message_l1 = sprintf( 
+            /* translators: %1$s: Project Name, %2$s: Strong Tag, %3$s: Strong Tag, %4$s: Privacy Policy Link, %5$s: Privacy Policy Link, %6$s: Title Tag, %7$s: Title Tag */
+            esc_html__( 'At %2$s%1$s%3$s, we prioritize continuous improvement and compatibility. To achieve this, we gather non-sensitive diagnostic information and details about plugin usage. This includes your site\'s URL, the versions of WordPress and PHP you\'re using, and a list of your installed plugins and themes. We also require your email address to provide you with exclusive discount coupons and updates. This data collection is crucial for ensuring that %2$s%1$s%3$s remains up-to-date and compatible with the most widely-used plugins and themes. Rest assured, your privacy is our priority – no spam, guaranteed. %4$sPrivacy Policy%5$s', 'just-tables' ), esc_html( $this->project_name ), '<strong>', '</strong>', '<a target="_blank" href="' . esc_url( $this->privacy_policy ) . '">', '</a>', '<h4 class="justtables-diagnostic-data-title">', '</h4>' );
 
-        $message_l2 = sprintf( esc_html__( 'Server information (Web server, PHP version, MySQL version), WordPress information, site name, site URL, number of plugins, number of users, your name, and email address. You can rest assured that no sensitive data will be collected or tracked. %1$sLearn more%2$s.', 'just-tables' ), '<a target="_blank" href="' . esc_url( $this->privacy_policy ) . '">', '</a>' );
+        $message_l2 = sprintf( 
+            /* translators: %1$s: Learn More Link */
+            esc_html__( 'Server information (Web server, PHP version, MySQL version), WordPress information, site name, site URL, number of plugins, number of users, your name, and email address. You can rest assured that no sensitive data will be collected or tracked. %1$sLearn more%2$s.', 'just-tables' ), '<a target="_blank" href="' . esc_url( $this->privacy_policy ) . '">', '</a>' );
 
         $button_text_1 = esc_html__( 'Count Me In', 'just-tables' );
         $button_link_1 = add_query_arg( array( 'justtables_diagnostic_data_agreed' => 'yes' ) );
@@ -484,7 +488,9 @@ class Diagnostic_Data {
         ?>
         <div class="justtables-diagnostic-data-style"><style>.justtables-diagnostic-data-notice,.woocommerce-embed-page .justtables-diagnostic-data-notice{padding-top:.75em;padding-bottom:.75em;}.justtables-diagnostic-data-notice .justtables-diagnostic-data-buttons,.justtables-diagnostic-data-notice .justtables-diagnostic-data-list,.justtables-diagnostic-data-notice .justtables-diagnostic-data-message{padding:.25em 2px;margin:0;}.justtables-diagnostic-data-notice .justtables-diagnostic-data-list{display:none;color:#646970;}.justtables-diagnostic-data-notice .justtables-diagnostic-data-buttons{padding-top:.75em;}.justtables-diagnostic-data-notice .justtables-diagnostic-data-buttons .button{margin-right:5px;box-shadow:none;}.justtables-diagnostic-data-loading{position:relative;}.justtables-diagnostic-data-loading::before{position:absolute;content:"";width:100%;height:100%;top:0;left:0;background-color:rgba(255,255,255,.5);z-index:999;}.justtables-diagnostic-data-disagree{border-width:0px !important;background-color: transparent!important; padding: 0!important;}h4.justtables-diagnostic-data-title {margin: 0 0 10px 0;font-size: 1.04em;font-weight: 600;}</style></div>
         <div class="justtables-diagnostic-data-notice notice notice-success">
-            <h4 class="justtables-diagnostic-data-title"><?php echo sprintf( esc_html__('🌟 Enhance Your %1$s Experience as a Valued Contributor!','just-tables'), esc_html( $this->project_name )); ?></h4>
+            <h4 class="justtables-diagnostic-data-title"><?php echo sprintf( 
+                /* translators: %1$s: Project Name */
+                esc_html__('🌟 Enhance Your %1$s Experience as a Valued Contributor!','just-tables'), esc_html( $this->project_name )); ?></h4>
             <p class="justtables-diagnostic-data-message"><?php echo wp_kses_post( $message_l1 ); ?></p>
             <p class="justtables-diagnostic-data-list"><?php echo wp_kses_post( $message_l2 ); ?></p>
             <p class="justtables-diagnostic-data-buttons">

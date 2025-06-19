@@ -3,7 +3,7 @@ Contributors: hasthemes, htplugins, devitemsllc, nazmulhudadev, zenaulislam, tar
 Tags: woocommerce, product table, JustTables, woocommerce table, woocommerce product table
 Requires at least: 5.0
 Tested up to: 6.8
-Stable tag: 1.6.3
+Stable tag: 1.6.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -110,6 +110,10 @@ Needs assistance to use this plugin?
 Feel free to [Contact us](https://hasthemes.com/contact-us/)
 
 == Changelog ==
+
+= Version: 1.6.4 - Date: 19 June, 2025 =
+* Fixed: Translation issue in multiple areas.
+
 = Version: 1.6.3 - Date: 16 April, 2025 =
 * Tested: Compatibility with the latest version of WordPress.
 * Tested: Compatibility with the latest version of WooCommerce.

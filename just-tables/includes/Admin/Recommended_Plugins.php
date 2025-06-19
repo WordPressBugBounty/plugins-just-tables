@@ -66,7 +66,7 @@ class Recommended_Plugins {
         // Initialize properties
         $this->text_domain       =  !empty( $args['text_domain'] ) ? $args['text_domain'] : 'htrp';
         $this->parent_menu_slug  =  !empty( $args['parent_menu_slug'] ) ? $args['parent_menu_slug'] : 'plugins.php';
-        $this->menu_label        =  !empty( $args['menu_label'] ) ? $args['menu_label'] : esc_html__( 'Recommendations', $this->text_domain );
+        $this->menu_label        =  !empty( $args['menu_label'] ) ? $args['menu_label'] : esc_html__( 'Recommendations', 'just-tables' );
         $this->menu_capability   =  !empty( $args['menu_capability'] ) ? $args['menu_capability'] : 'manage_options';
         $this->menu_page_slug    =  !empty( $args['menu_page_slug'] ) ? $args['menu_page_slug'] : $this->text_domain . '_extensions';
         $this->priority          =  !empty( $args['priority'] ) ? $args['priority'] : 100;
@@ -124,11 +124,11 @@ class Recommended_Plugins {
         $localize_vars['text_domain'] = sanitize_title_with_dashes( $this->text_domain );
         $localize_vars['nonce'] = wp_create_nonce('htrp_nonce');
         $localize_vars['buttontxt'] = array(
-            'buynow'     => esc_html__( 'Buy Now', $this->text_domain ),
-            'preview'    => esc_html__( 'Preview', $this->text_domain ),
-            'installing' => esc_html__( 'Installing..', $this->text_domain ),
-            'activating' => esc_html__( 'Activating..', $this->text_domain ),
-            'active'     => esc_html__( 'Activated', $this->text_domain ),
+            'buynow'     => esc_html__( 'Buy Now', 'just-tables' ),
+            'preview'    => esc_html__( 'Preview', 'just-tables' ),
+            'installing' => esc_html__( 'Installing..', 'just-tables' ),
+            'activating' => esc_html__( 'Activating..', 'just-tables' ),
+            'active'     => esc_html__( 'Activated', 'just-tables' ),
         );
         wp_localize_script( 'htrp-plugin-install-manager', 'htrp_params', $localize_vars );
 
@@ -229,10 +229,10 @@ class Recommended_Plugins {
                                     $plugins_type = 'pro';
                                     $image_url     = $this->plugin_icon( $plugins_type, $plugin['slug'] );
                                     $description    = $plugin['description'];
-                                    $author_name    = esc_html__( 'HasTheme', $this->text_domain );
+                                    $author_name    = esc_html__( 'HasTheme', 'just-tables' );
                                     $author_link    = $plugin['author_link'];
                                     $details_link   = $plugin['link'];
-                                    $button_text    = esc_html__('Buy Now', $this->text_domain );
+                                    $button_text    = esc_html__('Buy Now', 'just-tables' );
                                     $button_classes = 'button button-primary';
                                     $target         = '_blank';
                                     $modal_class    = '';
@@ -244,18 +244,18 @@ class Recommended_Plugins {
                                     if ( file_exists( WP_PLUGIN_DIR . '/' . $data['location'] ) && is_plugin_inactive( $data['location'] ) ) {
 
                                         $button_classes = 'button htrp-activate-now button-primary';
-                                        $button_text    = esc_html__( 'Activate', $this->text_domain );
+                                        $button_text    = esc_html__( 'Activate', 'just-tables' );
 
                                     // Not Installed.
                                     } elseif ( ! file_exists( WP_PLUGIN_DIR . '/' . $data['location'] ) ) {
 
                                         $button_classes = 'button htrp-install-now';
-                                        $button_text    = esc_html__( 'Install Now', $this->text_domain );
+                                        $button_text    = esc_html__( 'Install Now', 'just-tables' );
 
                                     // Active.
                                     } else {
                                         $button_classes = 'button disabled';
-                                        $button_text    = esc_html__( 'Activated', $this->text_domain );
+                                        $button_text    = esc_html__( 'Activated', 'just-tables' );
                                     }
 
                                     ?>
@@ -272,7 +272,7 @@ class Recommended_Plugins {
                                             <div class="desc column-description" style="margin-right: 0;">
                                                 <p><?php echo wp_kses_post(wp_trim_words( $description, 23, '....')); ?></p>
                                                 <p class="authors">
-                                                    <cite><?php echo esc_html__( 'By ', $this->text_domain ); ?>
+                                                    <cite><?php echo esc_html__( 'By ', 'just-tables' ); ?>
                                                         <?php if( $plugins_type == 'free' ): ?>
                                                             <?php echo wp_kses_post($author_name); ?>
                                                         <?php else: ?>
@@ -286,7 +286,7 @@ class Recommended_Plugins {
                                             <div class="column-updated">
                                                 <?php
                                                     if (! file_exists( WP_PLUGIN_DIR . '/' . $data['location'] ) && $plugins_type == 'pro' ) {
-                                                        echo '<a class="button button-primary" href="'.esc_url( $details_link ).'" target="'.esc_attr( $target ).'">'.esc_html__( 'Buy Now', $this->text_domain ).'</a>';
+                                                        echo '<a class="button button-primary" href="'.esc_url( $details_link ).'" target="'.esc_attr( $target ).'">'.esc_html__( 'Buy Now', 'just-tables' ).'</a>';
                                                     }else{
                                                 ?>
                                                     <button class="<?php echo esc_attr($button_classes); ?>" data-pluginopt='<?php echo wp_json_encode( $data ); ?>'><?php echo esc_html($button_text); ?></button>
@@ -294,12 +294,12 @@ class Recommended_Plugins {
                                                 <?php } ?>
                                             </div>
                                             <div class="column-downloaded">
-                                                <a href="<?php echo esc_url( $details_link ) ?>" target="<?php echo esc_attr( $target ) ?>" class="<?php echo esc_attr($modal_class); ?>"><?php echo esc_html__('More Details', $this->text_domain) ?></a>
+                                                <a href="<?php echo esc_url( $details_link ) ?>" target="<?php echo esc_attr( $target ) ?>" class="<?php echo esc_attr($modal_class); ?>"><?php echo esc_html__('More Details', 'just-tables') ?></a>
                                                 <span class="downloaded-count">
                                                     <?php
                                                         if( $plugins_type == 'free' ){
                                                             /* translators: %s: Number of installations. */
-                                                            printf( esc_html__( '%s Active Installations' ), esc_html($this->active_install_count( $prepare_plugin[$data['slug']]['active_installs'] )) );
+                                                            printf( esc_html__( '%s Active Installations', 'just-tables' ), esc_html($this->active_install_count( $prepare_plugin[$data['slug']]['active_installs'] )) );
                                                         }
                                                     ?>
                                                 </span>
@@ -373,11 +373,11 @@ class Recommended_Plugins {
             $active_installs_millions = floor( $active_installs / 1000000 );
             $active_installs_text     = sprintf(
                 /* translators: %s: Number of millions. */
-                _nx( '%s+ Million', '%s+ Million', $active_installs_millions, 'Active plugin installations' ),
+                _nx( '%s+ Million', '%s+ Million', $active_installs_millions, 'Active plugin installations', 'just-tables' ),
                 number_format_i18n( $active_installs_millions )
             );
         } elseif ( 0 === $active_installs ) {
-            $active_installs_text = _x( 'Less Than 10', 'Active plugin installations' );
+            $active_installs_text = _x( 'Less Than 10', 'Active plugin installations', 'just-tables' );
         } else {
             $active_installs_text = number_format_i18n( $active_installs ) . '+';
         }
@@ -396,7 +396,7 @@ class Recommended_Plugins {
             wp_send_json_error(
                 array(
                     'success' => false,
-                    'message' => esc_html__( 'Plugin Not Found', $this->text_domain ),
+                    'message' => esc_html__( 'Plugin Not Found', 'just-tables' ),
                 )
             );
         }
@@ -416,7 +416,7 @@ class Recommended_Plugins {
         wp_send_json_success(
             array(
                 'success' => true,
-                'message' => esc_html__( 'Plugin Successfully Activated', $this->text_domain ),
+                'message' => esc_html__( 'Plugin Successfully Activated', 'just-tables' ),
             )
         );
 

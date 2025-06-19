@@ -29,7 +29,9 @@ $product_name = $args['product_name'];
 $placeholder  = $args['placeholder'];
 $autocomplete = $args['autocomplete'];
 
-$label = ! empty( $product_name ) ? sprintf( esc_html__( '%s quantity', 'just-tables' ), wp_strip_all_tags( $product_name ) ) : esc_html__( 'Quantity', 'just-tables' );
+$label = ! empty( $product_name ) ? sprintf( 
+	/* translators: %s: Product Name */
+	esc_html__( '%s quantity', 'just-tables' ), wp_strip_all_tags( $product_name ) ) : esc_html__( 'Quantity', 'just-tables' );
 
 $class = join( ' ', (array) $classes );
 

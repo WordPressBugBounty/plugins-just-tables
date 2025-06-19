@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JustTables - WooCommerce Product Table\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 05:43+0000\n"
+"POT-Creation-Date: 2025-06-19 05:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,22 +16,26 @@ msgstr ""
 "X-Loco-Version: 2.6.7; wp-6.4.3\n"
 "X-Domain: just-tables"
 
-#: includes/ajax-actions.php:197 includes/Admin/Metabox.php:1547
+#. %1$s: Product Title, %2$s: View Cart Link
+#: includes/ajax-actions.php:199
 #, php-format
 msgid "\"%1$s\" has been added to your cart. %2$s"
 msgstr ""
 
-#: includes/Frontend/views/config-options.php:114
+#. %1$s: Quantity
+#: includes/Frontend/views/config-options.php:116
 #, php-format
 msgid "%1$s in stock"
 msgstr ""
 
-#: includes/Frontend/views/config-options.php:121
+#. %1$s: Quantity
+#: includes/Frontend/views/config-options.php:127
 #, php-format
 msgid "%1$s in stock (can be backordered)"
 msgstr ""
 
-#: just-tables.php:225
+#. %1$s: Strong Tag, %2$s: Strong Tag
+#: just-tables.php:221
 #, php-format
 msgid ""
 "%1$sJustTables - WooCommerce Product Table%2$s requires "
@@ -39,12 +43,19 @@ msgid ""
 "continue."
 msgstr ""
 
-#: just-tables.php:233
+#. %1$s: Strong Tag, %2$s: Strong Tag
+#: just-tables.php:231
 #, php-format
 msgid ""
 "%1$sJustTables - WooCommerce Product Table%2$s requires "
 "%1$s\"WooCommerce\"%2$s plugin to be installed and activated. Please install "
 "WooCommerce to continue."
+msgstr ""
+
+#. %s: Number of installations.
+#: includes/Admin/Recommended_Plugins.php:302
+#, php-format
+msgid "%s Active Installations"
 msgstr ""
 
 #. %s: Average rating value
@@ -54,62 +65,51 @@ msgstr ""
 msgid "%s out of 5"
 msgstr ""
 
-#: includes/Frontend/views/elements/quantity.php:32
+#. %s: Product Name
+#: includes/Frontend/views/elements/quantity.php:34
 #, php-format
 msgid "%s quantity"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1128
-msgid "_QTY_ in stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1138
-msgid "_QTY_ in stock (can be backordered)"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2452
-msgid "Accent color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2461
-msgid "Accent hover color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:737 includes/Admin/Metabox.php:738
-#: includes/Admin/Metabox.php:744
 #: includes/Frontend/views/columns-options.php:93
 #: includes/Frontend/views/columns-options.php:94
 #: includes/Frontend/views/columns-options.php:100
 msgid "Action"
 msgstr ""
 
-#: just-tables.php:226
+#: includes/Admin/Recommended_Plugins.php:247
+msgid "Activate"
+msgstr ""
+
+#: just-tables.php:222
 msgid "Activate WooCommerce"
 msgstr ""
 
-#: includes/Admin/Metabox.php:313
-msgid "Active"
+#: includes/Admin/Recommended_Plugins.php:131
+#: includes/Admin/Recommended_Plugins.php:258
+msgid "Activated"
 msgstr ""
 
-#: includes/Admin/Metabox.php:3157
-msgid "Active background color"
+#: includes/Admin/Recommended_Plugins.php:130
+msgid "Activating.."
 msgstr ""
 
-#: includes/Admin/Metabox.php:3175
-msgid "Active border color"
+#. %s: Number of millions.
+#: includes/Admin/Recommended_Plugins.php:376
+#, php-format
+msgctxt "Active plugin installations"
+msgid "%s+ Million"
+msgid_plural "%s+ Million"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Admin/Recommended_Plugins.php:380
+msgctxt "Active plugin installations"
+msgid "Less Than 10"
 msgstr ""
 
-#: includes/Admin/Metabox.php:3166
-msgid "Active text color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:808 includes/Admin/Metabox.php:865
-#: includes/Admin/Metabox.php:1431 includes/Admin/Post_Types.php:42
+#: includes/Admin/Post_Types.php:42
 msgid "Add New"
-msgstr ""
-
-#: includes/Admin/Metabox.php:261
-msgid "Add New Column"
 msgstr ""
 
 #: includes/Admin/Post_Types.php:36
@@ -121,101 +121,13 @@ msgstr ""
 msgid "Add New Product Table"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1514
-msgid "Add products to cart"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1430
-msgid "Add taxonomy filter."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1418
 #: includes/Frontend/views/config-options.php:83
 msgid "Add to cart"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2784
-msgid "Add to cart button (icon) color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2793
-msgid "Add to cart button (icon) hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2801
-msgid "Add to cart button (large)"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2776
-msgid "Add to cart button (small)"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2809
-msgid "Add to cart button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2827
-msgid "Add to cart button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2837
-msgid "Add to cart button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2846
-msgid "Add to cart button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2864
-msgid "Add to cart button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2855
-msgid "Add to cart button hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2818
-msgid "Add to cart button text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1373
-msgid "Add to cart button type"
-msgstr ""
-
-#: includes/Admin/Metabox.php:118
-msgid ""
-"Add unlimited taxonomy and attribute filters for the end-users to filter "
-"products instantly."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1205
-msgid "Added to cart notice"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1544
-msgid "Added to cart notice text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:332 includes/Admin/Metabox.php:344
-#: includes/Admin/Metabox.php:354
-msgid "Additional elements"
 msgstr ""
 
 #: includes/Admin/Post_Types.php:35
 msgctxt "Admin Menu text"
 msgid "Product Tables"
-msgstr ""
-
-#: includes/Admin/Metabox.php:787
-msgid "Advanced Custom Fields (ACF)"
-msgstr ""
-
-#: includes/Admin/Metabox.php:132
-msgid "Advertising"
-msgstr ""
-
-#: includes/Admin/Metabox.php:397
-msgid "Align"
 msgstr ""
 
 #: includes/Admin/Post_Types.php:40
@@ -229,11 +141,8 @@ msgid ""
 "the product variations in a whole new light with Swatchly."
 msgstr ""
 
-#: includes/Admin/Metabox.php:843
-msgid "Ascending"
-msgstr ""
-
-#: includes/Admin/Diagnostic_Data.php:475
+#. %1$s: Project Name, %2$s: Strong Tag, %3$s: Strong Tag, %4$s: Privacy Policy Link, %5$s: Privacy Policy Link, %6$s: Title Tag, %7$s: Title Tag
+#: includes/Admin/Diagnostic_Data.php:477
 #, php-format
 msgid ""
 "At %2$s%1$s%3$s, we prioritize continuous improvement and compatibility. To "
@@ -247,217 +156,32 @@ msgid ""
 "guaranteed. %4$sPrivacy Policy%5$s"
 msgstr ""
 
-#: includes/Admin/Metabox.php:715 includes/Admin/Metabox.php:716
-#: includes/Admin/Metabox.php:722
-msgid "Attributes"
-msgstr ""
-
 #: includes/Upgrader.php:97 includes/Upgrader.php:98 includes/Upgrader.php:104
-#: includes/Admin/Metabox.php:704 includes/Admin/Metabox.php:705
-#: includes/Admin/Metabox.php:711 includes/Admin/Metabox.php:1012
 msgid "Author"
 msgstr ""
 
-#: includes/Admin/Metabox.php:928
-msgid "Author/Vendor exclude IDs"
-msgstr ""
-
-#: includes/Admin/Metabox.php:918
-msgid "Author/Vendor include IDs"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1345
-msgid "Author/Vendor name on click"
-msgstr ""
-
-#: includes/Admin/Metabox.php:976
-msgid "Availability"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1158
-#: includes/Frontend/views/config-options.php:135
+#: includes/Frontend/views/config-options.php:143
 msgid "Available for backorder"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1155
-msgid "Available for backorder status text"
+#: includes/Admin/Recommended_Plugins.php:127
+#: includes/Admin/Recommended_Plugins.php:235
+#: includes/Admin/Recommended_Plugins.php:289
+msgid "Buy Now"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1646 includes/Admin/Metabox.php:1733
-#: includes/Admin/Metabox.php:1853 includes/Admin/Metabox.php:1924
-#: includes/Admin/Metabox.php:2013 includes/Admin/Metabox.php:2100
-#: includes/Admin/Metabox.php:2144 includes/Admin/Metabox.php:2232
-#: includes/Admin/Metabox.php:2319 includes/Admin/Metabox.php:2434
-#: includes/Admin/Metabox.php:2592 includes/Admin/Metabox.php:2670
-#: includes/Admin/Metabox.php:2714 includes/Admin/Metabox.php:2808
-#: includes/Admin/Metabox.php:2879 includes/Admin/Metabox.php:2950
-#: includes/Admin/Metabox.php:3021 includes/Admin/Metabox.php:3093
-#: includes/Admin/Metabox.php:3233
-msgid "Background color"
+#: includes/Admin/Recommended_Plugins.php:275
+msgid "By "
 msgstr ""
 
-#: includes/Admin/Metabox.php:1686 includes/Admin/Metabox.php:1773
-#: includes/Admin/Metabox.php:1871 includes/Admin/Metabox.php:1951
-#: includes/Admin/Metabox.php:2031 includes/Admin/Metabox.php:2118
-#: includes/Admin/Metabox.php:2180 includes/Admin/Metabox.php:2272
-#: includes/Admin/Metabox.php:2368 includes/Admin/Metabox.php:2501
-#: includes/Admin/Metabox.php:2619 includes/Admin/Metabox.php:2688
-#: includes/Admin/Metabox.php:2732 includes/Admin/Metabox.php:2826
-#: includes/Admin/Metabox.php:2897 includes/Admin/Metabox.php:2968
-#: includes/Admin/Metabox.php:3039 includes/Admin/Metabox.php:3111
-#: includes/Admin/Metabox.php:3251
-msgid "Border color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1696 includes/Admin/Metabox.php:1783
-#: includes/Admin/Metabox.php:1881 includes/Admin/Metabox.php:1961
-#: includes/Admin/Metabox.php:2041 includes/Admin/Metabox.php:2128
-#: includes/Admin/Metabox.php:2190 includes/Admin/Metabox.php:2282
-#: includes/Admin/Metabox.php:2629 includes/Admin/Metabox.php:2698
-#: includes/Admin/Metabox.php:2742 includes/Admin/Metabox.php:2836
-#: includes/Admin/Metabox.php:2907 includes/Admin/Metabox.php:2978
-#: includes/Admin/Metabox.php:3049 includes/Admin/Metabox.php:3121
-#: includes/Admin/Metabox.php:3261
-msgid "Border radius"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1665 includes/Admin/Metabox.php:1752
-#: includes/Admin/Metabox.php:2251 includes/Admin/Metabox.php:2347
-#: includes/Admin/Metabox.php:2480
-msgid "Border style"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1656 includes/Admin/Metabox.php:1743
-#: includes/Admin/Metabox.php:2242 includes/Admin/Metabox.php:2338
-#: includes/Admin/Metabox.php:2471
-msgid "Border width"
-msgstr ""
-
-#: includes/Admin/Metabox.php:173
-msgid "Call to rating"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1393 includes/Admin/Metabox.php:1406
-msgid "Cart icon"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1394 includes/Admin/Metabox.php:1407
-msgid "Cart plus icon"
-msgstr ""
-
-#: includes/Admin/Metabox.php:517 includes/Admin/Metabox.php:518
-#: includes/Admin/Metabox.php:524
 #: includes/Frontend/views/columns-options.php:53
 #: includes/Frontend/views/columns-options.php:54
 #: includes/Frontend/views/columns-options.php:60
 msgid "Categories"
 msgstr ""
 
-#: includes/Admin/Metabox.php:408 includes/Admin/Metabox.php:423
-#: includes/Admin/Metabox.php:2416 includes/Admin/Metabox.php:2534
-msgid "Center"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2544
-msgid "Check"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2552
-msgid "Check checkbox color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:439 includes/Admin/Metabox.php:440
-msgid "Check Mark"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1837 includes/Admin/Metabox.php:2171
-msgid "Checkbox color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2084 includes/Admin/Metabox.php:2206
-#: includes/Admin/Metabox.php:2551 includes/Admin/Metabox.php:2645
-#: includes/Admin/Metabox.php:2758 includes/Admin/Metabox.php:2783
-msgid "Color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1862 includes/Admin/Metabox.php:2109
-#: includes/Admin/Metabox.php:2817
-msgid "color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:379
-msgid "Column data keyword"
-msgstr ""
-
-#: includes/Admin/Metabox.php:378
-msgid "Column data keyword of custom field or custom taxonomy."
-msgstr ""
-
-#: includes/Admin/Metabox.php:365
-msgid "Column data type."
-msgstr ""
-
-#: includes/Admin/Metabox.php:325
-msgid "Column heading"
-msgstr ""
-
-#: includes/Admin/Metabox.php:324
-msgid "Column heading."
-msgstr ""
-
-#: includes/Admin/Metabox.php:291
-msgid "Column ID"
-msgstr ""
-
-#: includes/Admin/Metabox.php:388
-msgid "Column width."
-msgstr ""
-
-#: includes/Admin/Metabox.php:252
-msgid "Columns"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1020
-msgid "Comment Count"
-msgstr ""
-
 #: includes/Upgrader.php:78 includes/Upgrader.php:79 includes/Upgrader.php:85
-#: includes/Admin/Metabox.php:660 includes/Admin/Metabox.php:661
-#: includes/Admin/Metabox.php:667 includes/Admin/Metabox.php:782
-#: includes/Admin/Metabox.php:2872
 msgid "Compare"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2880
-msgid "Compare button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2898
-msgid "Compare button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2908
-msgid "Compare button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2917
-msgid "Compare button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2935
-msgid "Compare button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2926
-msgid "Compare button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2889
-msgid "Compare button text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:798
-msgid "Conditions"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:200
@@ -472,15 +196,7 @@ msgid ""
 "addition to its basic features."
 msgstr ""
 
-#: includes/Admin/Metabox.php:403
-msgid "Content"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1486
-msgid "Copy"
-msgstr ""
-
-#: includes/Admin/Diagnostic_Data.php:479
+#: includes/Admin/Diagnostic_Data.php:483
 msgid "Count Me In"
 msgstr ""
 
@@ -492,98 +208,8 @@ msgstr ""
 msgid "Create Product Table with JustTables."
 msgstr ""
 
-#: includes/Admin/Metabox.php:682 includes/Admin/Metabox.php:683
-#: includes/Admin/Metabox.php:689
-msgid "Created Date"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1487
-msgid "CSV"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1284
-msgid "Custom"
-msgstr ""
-
-#: includes/Admin/Metabox.php:270 includes/Admin/Metabox.php:278
-msgid "Custom Column"
-msgstr ""
-
-#: includes/Admin/Metabox.php:786
-msgid "Custom Field"
-msgstr ""
-
-#: includes/Admin/Metabox.php:367
-msgid "Custom field"
-msgstr ""
-
-#: includes/Admin/Metabox.php:789
-msgid "Custom Post Types and Custom Fields creator – WCK"
-msgstr ""
-
-#: includes/Admin/Metabox.php:788
-msgid "Custom Taxonomy"
-msgstr ""
-
-#: includes/Admin/Metabox.php:368
-msgid "Custom taxonomy"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1670 includes/Admin/Metabox.php:1757
-#: includes/Admin/Metabox.php:2256 includes/Admin/Metabox.php:2352
-#: includes/Admin/Metabox.php:2485
-msgid "Dashed"
-msgstr ""
-
 #: includes/Admin/class.recommendation-plugin.php:336
 msgid "DataCaptia"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1016
-msgid "Date"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1619
-msgid "Default (Titillium Web)"
-msgstr ""
-
-#: includes/Admin/Metabox.php:268
-msgid "Default heading"
-msgstr ""
-
-#: includes/Admin/Metabox.php:284
-msgid "Deletable?"
-msgstr ""
-
-#: includes/Admin/Metabox.php:844
-msgid "Descending"
-msgstr ""
-
-#: includes/Admin/Metabox.php:336 includes/Admin/Metabox.php:346
-#: includes/Admin/Metabox.php:506 includes/Admin/Metabox.php:507
-#: includes/Admin/Metabox.php:513
-msgid "Description"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1596
-msgid "Design"
-msgstr ""
-
-#: includes/Admin/Metabox.php:122
-msgid "Design table with rich design options."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1792
-msgid "Devider color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:561 includes/Admin/Metabox.php:562
-#: includes/Admin/Metabox.php:568
-msgid "Dimensions"
-msgstr ""
-
-#: includes/Admin/Metabox.php:121
-msgid "Display export buttons."
 msgstr ""
 
 #. Description of the plugin
@@ -598,18 +224,6 @@ msgstr ""
 msgid "Docus – YouTube Video Playlist"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1671 includes/Admin/Metabox.php:1758
-#: includes/Admin/Metabox.php:2257 includes/Admin/Metabox.php:2353
-#: includes/Admin/Metabox.php:2486
-msgid "Dotted"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1672 includes/Admin/Metabox.php:1759
-#: includes/Admin/Metabox.php:2258 includes/Admin/Metabox.php:2354
-#: includes/Admin/Metabox.php:2487
-msgid "Double"
-msgstr ""
-
 #: includes/Admin/Post_Types.php:44
 msgid "Edit Product Table"
 msgstr ""
@@ -621,183 +235,12 @@ msgid ""
 "and popular by keeping the visitors on your website for a longer period."
 msgstr ""
 
-#: includes/Admin/Metabox.php:1243
-msgid "Enable or disable header sorting."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1576
-msgid "Enable or disable paginate scroll to top."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1556
-msgid "Enable or disable paginate."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1586
-msgid "Enable or disable preloader."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1094
-msgid "Enable or disable search box."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1054
-msgid "Enable or disable table responsive layout."
-msgstr ""
-
-#: includes/Admin/Metabox.php:120
-msgid "Enable/disable multiple products add to cart button."
-msgstr ""
-
-#: includes/Admin/Metabox.php:119
-msgid "Enable/disable table header sorting option."
-msgstr ""
-
-#: includes/Admin/Metabox.php:783
-msgid "Ever Compare – Products Compare for WooCommerce"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1546
-#, php-format
-msgid "Example: \"%1$s\" has been added to your cart. %2$s"
-msgstr ""
-
-#: includes/Admin/Metabox.php:952 includes/Admin/Metabox.php:1295
-#: includes/Admin/Metabox.php:1305
-msgid "Example: 100."
-msgstr ""
-
-#: includes/Admin/Metabox.php:941
-msgid "Example: 50."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1127
-msgid "Example: _QTY_ in stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1137
-msgid "Example: _QTY_ in stock (can be backordered)"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1513
-msgid "Example: Add products to cart"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1417
-msgid "Example: Add to cart."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1157
-msgid "Example: Available for backorder"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1226 includes/Admin/Metabox.php:1235
-msgid "Example: extra-class another-class"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1524
-msgid "Example: Filter"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1117
-msgid "Example: In stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1187
-msgid "Example: Not available!"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1197
-msgid "Example: Nothing found - sorry!"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1147
-msgid "Example: Out of stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1167
-msgid "Example: Please select a variation!"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1177
-msgid "Example: Please select all options!"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1535
-msgid "Example: Reset Filter"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1106
-msgid "Example: Search..."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1502
-msgid "Example: Select All"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1216
-#, php-format
-msgid "Example: Showing %1$s to %2$s of %3$s entries"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1085
-msgid "Example: View Product."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1488
-msgid "Excel"
-msgstr ""
-
-#: includes/Admin/Metabox.php:886
-msgid "Exclude children."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1452
-msgid "Exclude term IDs"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3234
-msgid "Export button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3252
-msgid "Export button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3262
-msgid "Export button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3271
-msgid "Export button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3289
-msgid "Export button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3280
-msgid "Export button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3243
-msgid "Export button text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1483
-msgid "Export buttons"
-msgstr ""
-
 #: includes/Admin/class.recommendation-plugin.php:88
 msgid "Extensions For CF7"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:197
 msgid "Extensions For CF7 Pro"
-msgstr ""
-
-#: includes/Admin/Metabox.php:966
-msgid "External"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:306
@@ -808,145 +251,12 @@ msgstr ""
 msgid "Featured Image"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1525
-msgid "Filter"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1734
-msgid "Filter background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1774
-msgid "Filter border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1784
-msgid "Filter border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1753
-msgid "Filter border style."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1744
-msgid "Filter border width."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1793
-msgid "Filter devider color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1813
-msgid "Filter margin."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1522
-msgid "Filter options label"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1533
-msgid "Filter options reset button text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1803
-msgid "Filter padding."
-msgstr ""
-
 #: includes/Admin/Post_Types.php:59
 msgid "Filter Product Tables list"
 msgstr ""
 
-#: includes/Admin/Metabox.php:2006
-msgid "Filter trigger button"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2014
-msgid "Filter trigger button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2032
-msgid "Filter trigger button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2042
-msgid "Filter trigger button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2051
-msgid "Filter trigger button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2069
-msgid "Filter trigger button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2060
-msgid "Filter trigger button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2023
-msgid "Filter trigger button icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2380
-msgid "First column border radius"
-msgstr ""
-
-#: includes/Admin/Metabox.php:276
-msgid "Fixed heading"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1970
-msgid "Focus background color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1997
-msgid "Focus border color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1988
-msgid "Focus icon color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1979
-msgid "Focus text color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1616
-msgid "Font family"
-msgstr ""
-
-#: includes/Admin/Metabox.php:779
-#, php-format
-msgid ""
-"For %7$s column you may use %8$s plugin and for %9$s column you may use "
-"%10$s plugin. Besides there are lot of plugin available."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1283
-msgid "Full"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1617
-msgid "General font family."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3343
-msgid "Go Premium"
-msgstr ""
-
 #: includes/Admin/class.recommendation-plugin.php:251
 msgid "Google Place Review"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1675 includes/Admin/Metabox.php:1762
-#: includes/Admin/Metabox.php:2261 includes/Admin/Metabox.php:2357
-#: includes/Admin/Metabox.php:2490
-msgid "Groove"
-msgstr ""
-
-#: includes/Admin/Metabox.php:965
-msgid "Grouped"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:70
@@ -967,68 +277,12 @@ msgstr ""
 msgid "HashBar Pro"
 msgstr ""
 
+#: includes/Admin/Recommended_Plugins.php:232
+msgid "HasTheme"
+msgstr ""
+
 #. Author of the plugin
 msgid "HasThemes"
-msgstr ""
-
-#: includes/Admin/Metabox.php:418
-msgid "Header"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2381
-msgid "Header first column border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2393
-msgid "Header last column border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1242
-msgid "Header sorting"
-msgstr ""
-
-#: includes/Admin/Metabox.php:323
-msgid "Heading"
-msgstr ""
-
-#: includes/Admin/Metabox.php:594 includes/Admin/Metabox.php:595
-#: includes/Admin/Metabox.php:601 includes/Admin/Metabox.php:1304
-msgid "Height"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1460
-msgid "Hide empty terms."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2153
-msgid "Highlited item background color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1890 includes/Admin/Metabox.php:2050
-#: includes/Admin/Metabox.php:2845 includes/Admin/Metabox.php:2916
-#: includes/Admin/Metabox.php:2987 includes/Admin/Metabox.php:3058
-#: includes/Admin/Metabox.php:3130 includes/Admin/Metabox.php:3270
-msgid "Hover background color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1908 includes/Admin/Metabox.php:2068
-#: includes/Admin/Metabox.php:2863 includes/Admin/Metabox.php:2934
-#: includes/Admin/Metabox.php:3005 includes/Admin/Metabox.php:3076
-#: includes/Admin/Metabox.php:3148 includes/Admin/Metabox.php:3288
-msgid "Hover border color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1899 includes/Admin/Metabox.php:2215
-#: includes/Admin/Metabox.php:2654 includes/Admin/Metabox.php:2767
-#: includes/Admin/Metabox.php:2792 includes/Admin/Metabox.php:2854
-msgid "Hover color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2059 includes/Admin/Metabox.php:2925
-#: includes/Admin/Metabox.php:2996 includes/Admin/Metabox.php:3067
-#: includes/Admin/Metabox.php:3139 includes/Admin/Metabox.php:3200
-#: includes/Admin/Metabox.php:3279
-msgid "Hover text color"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:269
@@ -1116,17 +370,24 @@ msgstr ""
 msgid "https://hasthemes.com/wp/justtables/"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1391 includes/Admin/Metabox.php:1403
-msgid "Icon"
+#: includes/Admin/class-deactivation.php:424
+#: includes/Admin/class-deactivation.php:425
+msgid "I could not get the plugin to work"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1942 includes/Admin/Metabox.php:2610
-msgid "Icon color"
+#: includes/Admin/class-deactivation.php:417
+#: includes/Admin/class-deactivation.php:418
+msgid "I encountered an error or bug"
 msgstr ""
 
-#: includes/Admin/Metabox.php:461 includes/Admin/Metabox.php:462
-#: includes/Admin/Metabox.php:468 includes/Admin/Metabox.php:1007
-msgid "ID"
+#: includes/Admin/class-deactivation.php:403
+#: includes/Admin/class-deactivation.php:404
+msgid "I found a better plugin"
+msgstr ""
+
+#: includes/Admin/class-deactivation.php:428
+#: includes/Admin/class-deactivation.php:429
+msgid "I no longer need the plugin"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:254
@@ -1137,55 +398,12 @@ msgid ""
 "Review"
 msgstr ""
 
-#: includes/Admin/Metabox.php:991
-msgid "Ignore sticky product"
+#: includes/Admin/class-deactivation.php:399
+msgid "If you have a moment, please let us know why you are deactivating:"
 msgstr ""
 
-#: includes/Admin/Metabox.php:992
-msgid "Ignore sticky product in query."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1118
 #: includes/Frontend/views/config-options.php:107
 msgid "In stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1115
-msgid "In stock status text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1135
-msgid "In stock with quantity and backorder status text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1125
-msgid "In stock with quantity status text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:113
-msgid ""
-"Include and exclude specific products by product IDs, authors/vendors, "
-"minimum price, maximum price, product type, availability/stock status, "
-"taxonomies and terms."
-msgstr ""
-
-#: includes/Admin/Metabox.php:829
-msgid "Include children."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1445
-msgid "Include term IDs"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1668 includes/Admin/Metabox.php:1755
-#: includes/Admin/Metabox.php:2254 includes/Admin/Metabox.php:2350
-#: includes/Admin/Metabox.php:2414 includes/Admin/Metabox.php:2483
-#: includes/Admin/Metabox.php:2532
-msgid "Inherit"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1620
-msgid "Inherit from theme"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:227
@@ -1202,29 +420,25 @@ msgstr ""
 msgid "Insert into Product Table"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1673 includes/Admin/Metabox.php:1760
-#: includes/Admin/Metabox.php:2259 includes/Admin/Metabox.php:2355
-#: includes/Admin/Metabox.php:2488
-msgid "Inset"
+#: includes/Admin/Recommended_Plugins.php:253
+msgid "Install Now"
 msgstr ""
 
-#: just-tables.php:234
+#: just-tables.php:232
 msgid "Install WooCommerce"
 msgstr ""
 
-#: includes/Admin/Metabox.php:409 includes/Admin/Metabox.php:424
-msgid "Justify"
+#: includes/Admin/Recommended_Plugins.php:129
+msgid "Installing.."
+msgstr ""
+
+#: includes/Admin/class-deactivation.php:432
+#: includes/Admin/class-deactivation.php:433
+msgid "It's a temporary deactivation"
 msgstr ""
 
 #. Name of the plugin
 msgid "JustTables - WooCommerce Product Table"
-msgstr ""
-
-#: includes/Admin/Metabox.php:111
-msgid ""
-"JustTables is a fantastic WordPress plugin that allows you to display the "
-"products in a table layout so that, your customers can make buying decisions "
-"effectively through easy navigation."
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:182
@@ -1241,80 +455,8 @@ msgstr ""
 msgid "JustTables Pro"
 msgstr ""
 
-#: includes/Admin/Metabox.php:377
-msgid "Keyword"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1282
-msgid "Large"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1383
-msgid "Large button"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2392
-msgid "Last column border radius"
-msgstr ""
-
-#: includes/Admin/Metabox.php:406 includes/Admin/Metabox.php:421
-#: includes/Admin/Metabox.php:2415 includes/Admin/Metabox.php:2533
-msgid "Left"
-msgstr ""
-
-#: includes/Admin/Metabox.php:572 includes/Admin/Metabox.php:573
-#: includes/Admin/Metabox.php:579
-msgid "Length"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1629
-msgid "Loading icon color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1630
-msgid "Loading icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1716 includes/Admin/Metabox.php:1812
-#: includes/Admin/Metabox.php:2302
-msgid "Margin"
-msgstr ""
-
-#: includes/Admin/Metabox.php:950
-msgid "Maximum price"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1280
-msgid "Medium"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1281
-msgid "Medium large"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1022
-msgid "Menu Order"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1023
-msgid "Meta Value"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1024
-msgid "Meta Value Number"
-msgstr ""
-
-#: includes/Admin/Metabox.php:939
-msgid "Minimum price"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1017
-msgid "Modified"
-msgstr ""
-
-#: includes/Admin/Metabox.php:693 includes/Admin/Metabox.php:694
-#: includes/Admin/Metabox.php:700
-msgid "Modified Date"
+#: includes/Admin/Recommended_Plugins.php:297
+msgid "More Details"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:130
@@ -1332,73 +474,15 @@ msgid ""
 "switch to their preferred currency or their country’s currency."
 msgstr ""
 
-#: includes/Admin/Metabox.php:1846
-msgid "Multiple add to cart button"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1854
-msgid "Multiple add to cart button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1872
-msgid "Multiple add to cart button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1882
-msgid "Multiple add to cart button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1891
-msgid "Multiple add to cart button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1909
-msgid "Multiple add to cart button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1900
-msgid "Multiple add to cart button hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1511
-msgid "Multiple add to cart button text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1863
-msgid "Multiple add to cart button text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1014
-msgid "Name/Slug"
-msgstr ""
-
 #: includes/Admin/Post_Types.php:43
 msgid "New Product Table"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1335 includes/Admin/Metabox.php:1363
-msgid "New tab"
-msgstr ""
-
-#: includes/Admin/Metabox.php:315 includes/Admin/Metabox.php:994
-#: includes/Admin/Metabox.php:1065 includes/Admin/Metabox.php:1096
-#: includes/Admin/Metabox.php:1245 includes/Admin/Metabox.php:1474
-msgid "No"
-msgstr ""
-
-#: includes/Admin/Diagnostic_Data.php:482
+#: includes/Admin/Diagnostic_Data.php:486
 msgid "No, Thanks"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1006 includes/Admin/Metabox.php:1405
-#: includes/Admin/Metabox.php:1677 includes/Admin/Metabox.php:1764
-#: includes/Admin/Metabox.php:2263 includes/Admin/Metabox.php:2359
-#: includes/Admin/Metabox.php:2492
-msgid "None"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1188
-#: includes/Frontend/views/config-options.php:156
+#: includes/Frontend/views/config-options.php:164
 msgid "Not available!"
 msgstr ""
 
@@ -1415,211 +499,25 @@ msgstr ""
 msgid "Not yet rated"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1258 includes/Admin/Metabox.php:1319
-#: includes/Admin/Metabox.php:1348
-msgid "Nothing"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1198
-#: includes/Frontend/views/config-options.php:163
+#: includes/Frontend/views/config-options.php:171
 msgid "Nothing found - sorry!"
 msgstr ""
 
-#: includes/Admin/Metabox.php:2077
-msgid "Options label"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2085
-msgid "Options label color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2199
-msgid "Options reset"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2207
-msgid "Options reset color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2216
-msgid "Options reset hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2093
-msgid "Options select"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2101
-msgid "Options select background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2119
-msgid "Options select border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2129
-msgid "Options select border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2137
-msgid "Options select dropdown"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2145
-msgid "Options select dropdown background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2181
-msgid "Options select dropdown border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2191
-msgid "Options select dropdown border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2172
-msgid "Options select dropdown checkbox color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2154
-msgid "Options select dropdown highlited item background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2163
-msgid "Options select dropdown text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2110
-msgid "Options select text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:840
-msgid "Order"
-msgstr ""
-
-#: includes/Admin/Metabox.php:114
-msgid "Order products by all required options."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1003
-msgid "Orderby"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1034
-msgid "Orderby meta keyword"
+#: includes/Admin/class-deactivation.php:436
+#: includes/Admin/class-deactivation.php:437
+msgid "Other"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:288
 msgid "Others"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1148
-#: includes/Frontend/views/config-options.php:128
+#: includes/Frontend/views/config-options.php:136
 msgid "Out of stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1145
-msgid "Out of stock status text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1674 includes/Admin/Metabox.php:1761
-#: includes/Admin/Metabox.php:2260 includes/Admin/Metabox.php:2356
-#: includes/Admin/Metabox.php:2489
-msgid "Outset"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1706 includes/Admin/Metabox.php:1802
-#: includes/Admin/Metabox.php:2292 includes/Admin/Metabox.php:2402
-#: includes/Admin/Metabox.php:2520
-msgid "Padding"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1555
-msgid "Paginate"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1565
-msgid "Paginate info"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1214
-msgid "Paginate info text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1575
-msgid "Paginate scroll to top"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3184
-msgid "Pagination arrow button"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3201
-msgid "Pagination arrow button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3192
-msgid "Pagination arrow button text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3158
-msgid "Pagination button active background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3176
-msgid "Pagination button active border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3167
-msgid "Pagination button active text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3094
-msgid "Pagination button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3112
-msgid "Pagination button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3122
-msgid "Pagination button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3131
-msgid "Pagination button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3149
-msgid "Pagination button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3140
-msgid "Pagination button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3103
-msgid "Pagination button text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3209
-msgid "Pagination info"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3217
-msgid "Pagination info text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1018
-msgid "Parent"
 msgstr ""
 
 #: includes/Admin/Post_Types.php:39
 msgid "Parent Product Table:"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1489
-msgid "PDF"
 msgstr ""
 
 #. %s: Product title
@@ -1628,25 +526,21 @@ msgstr ""
 msgid "Please choose a right combination of \"%s\"."
 msgstr ""
 
-#: includes/Admin/Metabox.php:88
-msgid "Please copy the shortcode below and use anywhere you want."
+#: includes/Admin/class-deactivation.php:421
+msgid ""
+"Please describe the error/bug you encountered. This will help us fix it for "
+"future users."
 msgstr ""
 
 #: includes/Frontend/Shortcode.php:42
 msgid "Please provide a valid shortcode!"
 msgstr ""
 
-#: includes/Admin/Metabox.php:51
-msgid "Please save or publish this product table to get shortcode here."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1168
-#: includes/Frontend/views/config-options.php:142
+#: includes/Frontend/views/config-options.php:150
 msgid "Please select a variation!"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1178
-#: includes/Frontend/views/config-options.php:149
+#: includes/Frontend/views/config-options.php:157
 msgid "Please select all options!"
 msgstr ""
 
@@ -1654,8 +548,24 @@ msgstr ""
 msgid "Please select one or more product using checkbox to add to the cart."
 msgstr ""
 
-#: includes/Admin/Metabox.php:1320
-msgid "Popup"
+#: includes/Admin/class-deactivation.php:414
+msgid "Please share more details."
+msgstr ""
+
+#: includes/Admin/class-deactivation.php:440
+msgid "Please share the reason."
+msgstr ""
+
+#: includes/Admin/class-deactivation.php:407
+msgid "Please share which plugin."
+msgstr ""
+
+#: includes/Admin/Recommended_Plugins.php:399
+msgid "Plugin Not Found"
+msgstr ""
+
+#: includes/Admin/Recommended_Plugins.php:419
+msgid "Plugin Successfully Activated"
 msgstr ""
 
 #: includes/Admin/Post_Types.php:33
@@ -1668,44 +578,22 @@ msgctxt "Post Type Singular Name"
 msgid "Product Table"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1585
-msgid "Preloader"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3346
-msgid "premium version"
+#: includes/Admin/Recommended_Plugins.php:128
+msgid "Preview"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:318
 msgid "Preview Link Generator"
 msgstr ""
 
-#: includes/Admin/Metabox.php:627 includes/Admin/Metabox.php:628
-#: includes/Admin/Metabox.php:634 includes/Admin/Metabox.php:1011
 #: includes/Frontend/views/columns-options.php:73
 #: includes/Frontend/views/columns-options.php:74
 #: includes/Frontend/views/columns-options.php:80
 msgid "Price"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1490
-msgid "Print"
-msgstr ""
-
-#: includes/Admin/Metabox.php:298
-msgid "Priority"
-msgstr ""
-
-#: includes/Admin/Metabox.php:908
-msgid "Product exclude IDs"
-msgstr ""
-
-#: includes/Admin/Metabox.php:898
-msgid "Product include IDs"
-msgstr ""
-
-#: includes/Frontend/views/elements/quantity.php:49
-#: includes/Frontend/views/elements/quantity.php:55
+#: includes/Frontend/views/elements/quantity.php:51
+#: includes/Frontend/views/elements/quantity.php:57
 msgctxt "Product quantity input tooltip"
 msgid "Qty"
 msgstr ""
@@ -1730,440 +618,57 @@ msgstr ""
 msgid "Product Tables list navigation"
 msgstr ""
 
-#: includes/Admin/Metabox.php:483 includes/Admin/Metabox.php:484
-#: includes/Admin/Metabox.php:490 includes/Admin/Metabox.php:1013
 #: includes/Frontend/views/columns-options.php:42
 #: includes/Frontend/views/columns-options.php:43
 #: includes/Frontend/views/columns-options.php:49
 msgid "Product Title"
 msgstr ""
 
-#: includes/Admin/Metabox.php:960
-msgid "Product type"
-msgstr ""
-
 #: includes/Admin/class.recommendation-plugin.php:161
 msgid "Product Variation Swatches"
 msgstr ""
 
-#: includes/Admin/Metabox.php:981
-msgid "Products available on backorder"
-msgstr ""
-
-#: includes/Admin/Metabox.php:979
-msgid "Products in stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1195
-msgid "Products not found text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:980
-msgid "Products out of stock"
-msgstr ""
-
-#: includes/Admin/Metabox.php:853
-msgid "Products per page"
-msgstr ""
-
-#: includes/Admin/Metabox.php:855
-msgid ""
-"Provide -1 (minus one) for show all products in a page. Example: 10 or -1."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1545
-msgid "Provide added to cart notice text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1156
-msgid "Provide available for backorder status text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1234
-msgid "Provide extra class name of table wrapper."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1225
-msgid "Provide extra class name of table."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1523
-msgid "Provide filter options label."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1534
-msgid "Provide filter options reset button text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:919 includes/Admin/Metabox.php:929
-msgid "Provide IDs of authors/vendors."
-msgstr ""
-
-#: includes/Admin/Metabox.php:899 includes/Admin/Metabox.php:909
-msgid "Provide IDs of products."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1116
-msgid "Provide in stock status text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1136
-msgid "Provide in stock with quantity and backorder status text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1126
-msgid "Provide in stock with quantity status text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1512
-msgid "Provide multiple add to cart button text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1035
-msgid "Provide orderby meta keyword."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1146
-msgid "Provide out of stock status text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1215
-msgid "Provide paginate info text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1196
-msgid "Provide product not found text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1105
-msgid "Provide product search box placeholder text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:951
-msgid "Provide products maximum price."
-msgstr ""
-
-#: includes/Admin/Metabox.php:940
-msgid "Provide products minimum price."
-msgstr ""
-
-#: includes/Admin/Metabox.php:854
-msgid "Provide products per page."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1501
-msgid "Provide select all checkbox label."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1176
-msgid "Provide select variation all options text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1166
-msgid "Provide select variation text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1186
-msgid "Provide variation not available text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1084
-msgid "Provide view product button text."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3346
-msgid "Purchase our"
-msgstr ""
-
-#: includes/Admin/Metabox.php:649 includes/Admin/Metabox.php:650
-#: includes/Admin/Metabox.php:656 includes/Admin/Metabox.php:2585
 #: includes/Frontend/views/columns-options.php:83
 #: includes/Frontend/views/columns-options.php:84
 #: includes/Frontend/views/columns-options.php:90
-#: includes/Frontend/views/elements/quantity.php:32
+#: includes/Frontend/views/elements/quantity.php:34
 msgid "Quantity"
 msgstr ""
 
-#: includes/Admin/Metabox.php:2593
-msgid "Quantity input field background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2620
-msgid "Quantity input field border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2630
-msgid "Quantity input field border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2611
-msgid "Quantity input field icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2602
-msgid "Quantity input field text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:671 includes/Admin/Metabox.php:672
-#: includes/Admin/Metabox.php:678 includes/Admin/Metabox.php:784
-msgid "Quick View"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2943
-msgid "Quick view"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2951
-msgid "Quick view button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2969
-msgid "Quick view button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2979
-msgid "Quick view button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2988
-msgid "Quick view button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3006
-msgid "Quick view button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2997
-msgid "Quick view button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2960
-msgid "Quick view button text color."
+#: includes/Admin/class-deactivation.php:398
+msgid "Quick Feedback"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:324
 msgid "QuickSwish"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1019
-msgid "Random/Rand"
-msgstr ""
-
-#: includes/Admin/Metabox.php:334 includes/Admin/Metabox.php:605
-#: includes/Admin/Metabox.php:606 includes/Admin/Metabox.php:612
-#: includes/Admin/Metabox.php:1009 includes/Admin/Metabox.php:2560
-msgid "Rating"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2568
-msgid "Rating star icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2577
-msgid "Rating text color."
-msgstr ""
-
 #: includes/Admin/class.recommendation-plugin.php:294
 msgid "Really Simple Google Tag Manager"
+msgstr ""
+
+#: includes/Admin/Recommended_Plugins.php:69
+msgid "Recommendations"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:51
 msgid "Recommended"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1021
-msgid "Relevance"
-msgstr ""
-
 #: includes/Admin/Post_Types.php:53
 msgid "Remove featured image"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1536
-msgid "Reset Filter"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2510
-msgid "Responsive columns devider color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1062
-msgid "Responsive content display by default"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1053
-msgid "Responsive layout"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1676 includes/Admin/Metabox.php:1763
-#: includes/Admin/Metabox.php:2262 includes/Admin/Metabox.php:2358
-#: includes/Admin/Metabox.php:2491
-msgid "Ridge"
-msgstr ""
-
-#: includes/Admin/Metabox.php:407 includes/Admin/Metabox.php:422
-#: includes/Admin/Metabox.php:2417 includes/Admin/Metabox.php:2535
-msgid "Right"
-msgstr ""
-
-#: includes/Admin/Metabox.php:419
-msgid "Same as content"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1334 includes/Admin/Metabox.php:1362
-msgid "Same tab"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1093
-msgid "Search box"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1104
-msgid "Search box placeholder text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1917
-msgid "Search input field"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1925
-msgid "Search input field background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1952
-msgid "Search input field border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1962
-msgid "Search input field border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1971
-msgid "Search input field focus background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1998
-msgid "Search input field focus border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1989
-msgid "Search input field focus icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1980
-msgid "Search input field focus text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1943
-msgid "Search input field icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1934
-msgid "Search input field text color."
 msgstr ""
 
 #: includes/Admin/Post_Types.php:48
 msgid "Search Product Table"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1107
 #: includes/Frontend/views/config-options.php:97
 msgid "Search..."
 msgstr ""
 
-#: includes/Admin/Metabox.php:404
-msgid "Select"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1374
-msgid "Select add to cart button type."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1503
-msgid "Select All"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1821
-msgid "Select all checkbox"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1838
-msgid "Select all checkbox color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1500
-msgid "Select all checkbox label"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1829
-msgid "Select all text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1346
-msgid "Select behavior of author/vendor name on click."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1317
-msgid "Select behavior of thumbnail on click."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1256
-msgid "Select behavior of title on click."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1484
-msgid "Select export buttons to display."
-msgstr ""
-
-#: includes/Admin/Metabox.php:961
-msgid "Select product type."
-msgstr ""
-
-#: includes/Admin/Metabox.php:977
-msgid "Select products availability."
-msgstr ""
-
-#: includes/Admin/Metabox.php:841
-msgid "Select products order."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1004
-msgid "Select products orderby."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1270
-msgid "Select thumbnail size."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1175
-msgid "Select variation all options text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1165
-msgid "Select variation text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1360
-msgid "Select view author/vendor archive target."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1332
-msgid "Select view product target."
-msgstr ""
-
-#: includes/Admin/Metabox.php:822 includes/Admin/Metabox.php:879
-#: includes/Admin/Metabox.php:900 includes/Admin/Metabox.php:910
-#: includes/Admin/Metabox.php:920 includes/Admin/Metabox.php:930
-#: includes/Admin/Metabox.php:1446 includes/Admin/Metabox.php:1453
-msgid "Separate with comma. Example: 1, 2, 3, 4."
-msgstr ""
-
-#: includes/Admin/Metabox.php:450 includes/Admin/Metabox.php:451
-#: includes/Admin/Metabox.php:457
-msgid "Serial"
-msgstr ""
-
-#: includes/Admin/Diagnostic_Data.php:477
+#. %1$s: Learn More Link
+#: includes/Admin/Diagnostic_Data.php:481
 #, php-format
 msgid ""
 "Server information (Web server, PHP version, MySQL version), WordPress "
@@ -2172,313 +677,54 @@ msgid ""
 "collected or tracked. %1$sLearn more%2$s."
 msgstr ""
 
-#: includes/Admin/Metabox.php:116
-msgid ""
-"Set behavior of title on click, thumbnail on click and author/vendor name on "
-"click."
-msgstr ""
-
 #: includes/Admin/Post_Types.php:52
 msgid "Set featured image"
-msgstr ""
-
-#: includes/Admin/Metabox.php:117
-msgid "Set view product and author/vendor archive target."
-msgstr ""
-
-#: includes/Admin/Metabox.php:495 includes/Admin/Metabox.php:496
-#: includes/Admin/Metabox.php:502
-msgid "Short Description"
-msgstr ""
-
-#: includes/Admin/Metabox.php:335
-msgid "Short description"
 msgstr ""
 
 #: includes/Admin/Posts_Columns.php:38
 msgid "Shortcode"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1206
-msgid "Show or hide added to cart notice."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1566
-msgid "Show or hide paginate info."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1063
-msgid "Show or hide responsive content by default."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1075
-msgid "Show or hide table header."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1472
-msgid "Show or hide taxonomy filter by default."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1217
-#: includes/Frontend/views/config-options.php:176
+#. %1$s: Start Entry, %2$s: End Entry, %3$s: Total Entry
+#: includes/Frontend/views/config-options.php:186
 #, php-format
 msgid "Showing %1$s to %2$s of %3$s entries"
-msgstr ""
-
-#: includes/Admin/Metabox.php:963
-msgid "Simple"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:348
 msgid "Sirve – Simple Directory Listing"
 msgstr ""
 
-#: includes/Admin/Metabox.php:539 includes/Admin/Metabox.php:540
-#: includes/Admin/Metabox.php:546 includes/Admin/Metabox.php:1008
-msgid "SKU"
+#: includes/Admin/class-deactivation.php:445
+msgid "Skip & Deactivate"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1382
-msgid "Small button"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1669 includes/Admin/Metabox.php:1756
-#: includes/Admin/Metabox.php:2255 includes/Admin/Metabox.php:2351
-#: includes/Admin/Metabox.php:2484
-msgid "Solid"
-msgstr ""
-
-#: includes/Admin/Metabox.php:306
-msgid "Sort"
-msgstr ""
-
-#: includes/Admin/Metabox.php:115
-msgid "Specify the product thumbnail size."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2567
-msgid "Star icon color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:616 includes/Admin/Metabox.php:617
-#: includes/Admin/Metabox.php:623 includes/Admin/Metabox.php:1010
 #: includes/Frontend/views/columns-options.php:63
 #: includes/Frontend/views/columns-options.php:64
 #: includes/Frontend/views/columns-options.php:70
 msgid "Stock"
 msgstr ""
 
-#: includes/Admin/Metabox.php:2233
-msgid "Table background color."
+#: includes/Admin/class-deactivation.php:444
+msgid "Submit & Deactivate"
 msgstr ""
 
-#: includes/Admin/Metabox.php:2453
-msgid "Table body accent color."
+#: includes/Admin/class-deactivation.php:410
+#: includes/Admin/class-deactivation.php:411
+msgid "The plugin suddenly stopped working"
 msgstr ""
 
-#: includes/Admin/Metabox.php:2462
-msgid "Table body accent hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2435
-msgid "Table body background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2502
-msgid "Table body border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2481
-msgid "Table body border style."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2472
-msgid "Table body border width."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2521
-msgid "Table body padding."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2511
-msgid "Table body responsive columns devider color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2530
-msgid "Table body text align."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2444
-msgid "Table body text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2273
-msgid "Table border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2283
-msgid "Table border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2252
-msgid "Table border style."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2243
-msgid "Table border width."
-msgstr ""
-
-#: includes/Admin/Metabox.php:241
-msgid "Table Configuration"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1224
-msgid "Table extra class name"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1074
-msgid "Table header"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2320
-msgid "Table header background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2369
-msgid "Table header border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2348
-msgid "Table header border style."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2339
-msgid "Table header border width."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2403
-msgid "Table header padding."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2412
-msgid "Table header text align."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2329
-msgid "Table header text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2303
-msgid "Table margin."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2293
-msgid "Table padding."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3314
-msgid "Table Popup"
-msgstr ""
-
-#: includes/Admin/Metabox.php:73
-msgid "Table Shortcode"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1233
-msgid "Table wrapper extra class name"
-msgstr ""
-
-#: includes/Admin/Metabox.php:528 includes/Admin/Metabox.php:529
-#: includes/Admin/Metabox.php:535
-msgid "Tags"
-msgstr ""
-
-#: includes/Admin/Metabox.php:814 includes/Admin/Metabox.php:871
-#: includes/Admin/Metabox.php:1438
-msgid "Taxonomy"
-msgstr ""
-
-#: includes/Admin/Metabox.php:863
-msgid "Taxonomy exclude"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1429
-msgid "Taxonomy filter"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1471
-msgid "Taxonomy filter display by default"
-msgstr ""
-
-#: includes/Admin/Metabox.php:806
-msgid "Taxonomy include"
-msgstr ""
-
-#: includes/Admin/Metabox.php:864
-msgid "Taxonomy terms exclude."
-msgstr ""
-
-#: includes/Admin/Metabox.php:807
-msgid "Taxonomy terms include."
-msgstr ""
-
-#: includes/Admin/Metabox.php:821 includes/Admin/Metabox.php:878
-msgid "Term IDs"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1416
-msgid "Text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2411 includes/Admin/Metabox.php:2529
-msgid "Text align"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1828 includes/Admin/Metabox.php:1933
-#: includes/Admin/Metabox.php:2022 includes/Admin/Metabox.php:2162
-#: includes/Admin/Metabox.php:2328 includes/Admin/Metabox.php:2443
-#: includes/Admin/Metabox.php:2576 includes/Admin/Metabox.php:2601
-#: includes/Admin/Metabox.php:2679 includes/Admin/Metabox.php:2723
-#: includes/Admin/Metabox.php:2888 includes/Admin/Metabox.php:2959
-#: includes/Admin/Metabox.php:3030 includes/Admin/Metabox.php:3102
-#: includes/Admin/Metabox.php:3191 includes/Admin/Metabox.php:3216
-#: includes/Admin/Metabox.php:3242
-msgid "Text color"
-msgstr ""
-
-#: includes/Admin/Metabox.php:472 includes/Admin/Metabox.php:473
-#: includes/Admin/Metabox.php:479 includes/Admin/Metabox.php:1279
 #: includes/Frontend/views/columns-options.php:32
 #: includes/Frontend/views/columns-options.php:33
 #: includes/Frontend/views/columns-options.php:39
 msgid "Thumbnail"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1316
-msgid "Thumbnail on click"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1269
-msgid "Thumbnail size"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1255
-msgid "Title on click"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3346
-msgid "to unlock these pro features!"
-msgstr ""
-
-#: includes/Admin/Metabox.php:364 includes/Admin/Metabox.php:1015
-msgid "Type"
-msgstr ""
-
 #: includes/Admin/Post_Types.php:45
 msgid "Update Product Table"
 msgstr ""
 
-#: includes/Admin.php:61 includes/Admin.php:62
+#: includes/Admin.php:62 includes/Admin.php:63
 msgid "Upgrade to Pro"
 msgstr ""
 
@@ -2490,124 +736,12 @@ msgstr ""
 msgid "Use as featured image"
 msgstr ""
 
-#: includes/Admin/Metabox.php:1045
-msgid "Utilities"
-msgstr ""
-
-#: includes/Admin/Metabox.php:964
-msgid "Variable"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1185
-msgid "Variation not available text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2671
-msgid "Variation popup background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2689
-msgid "Variation popup border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2699
-msgid "Variation popup border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2680
-msgid "Variation popup text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2715
-msgid "Variation select background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2733
-msgid "Variation select border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2743
-msgid "Variation select border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2724
-msgid "Variation select text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:726 includes/Admin/Metabox.php:727
-#: includes/Admin/Metabox.php:733 includes/Admin/Metabox.php:2638
-msgid "Variations"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2646
-msgid "Variations icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2655
-msgid "Variations icon hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2663
-msgid "Variations popup"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2707
-msgid "Variations select"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1349
-msgid "View archive"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1359
-msgid "View author/vendor archive target"
-msgstr ""
-
-#: includes/ajax-actions.php:214
+#: includes/ajax-actions.php:216
 msgid "View Cart"
 msgstr ""
 
-#: includes/Admin/Metabox.php:749 includes/Admin/Metabox.php:750
-#: includes/Admin/Metabox.php:756 includes/Admin/Metabox.php:1086
 #: includes/Frontend/views/config-options.php:66
 msgid "View Product"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1259 includes/Admin/Metabox.php:1321
-#: includes/Admin/Metabox.php:3014
-msgid "View product"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3022
-msgid "View product button background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3040
-msgid "View product button border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3050
-msgid "View product button border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3059
-msgid "View product button hover background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3077
-msgid "View product button hover border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:3068
-msgid "View product button hover text color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1083
-msgid "View product button text"
-msgstr ""
-
-#: includes/Admin/Metabox.php:3031
-msgid "View product button text color."
 msgstr ""
 
 #: includes/Admin/Post_Types.php:46
@@ -2616,10 +750,6 @@ msgstr ""
 
 #: includes/Admin/Post_Types.php:47
 msgid "View Product Tables"
-msgstr ""
-
-#: includes/Admin/Metabox.php:1331
-msgid "View product target"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:260
@@ -2641,11 +771,6 @@ msgstr ""
 msgid "WC Sales Notification"
 msgstr ""
 
-#: includes/Admin/Metabox.php:550 includes/Admin/Metabox.php:551
-#: includes/Admin/Metabox.php:557
-msgid "Weight"
-msgstr ""
-
 #: includes/Admin/class.recommendation-plugin.php:124
 msgid "Whols"
 msgstr ""
@@ -2663,30 +788,6 @@ msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:170
 msgid "Whols Pro"
-msgstr ""
-
-#: includes/Admin/Metabox.php:387 includes/Admin/Metabox.php:583
-#: includes/Admin/Metabox.php:584 includes/Admin/Metabox.php:590
-#: includes/Admin/Metabox.php:1294
-msgid "Width"
-msgstr ""
-
-#: includes/Admin/Metabox.php:356 includes/Admin/Metabox.php:638
-#: includes/Admin/Metabox.php:639 includes/Admin/Metabox.php:645
-#: includes/Admin/Metabox.php:780 includes/Admin/Metabox.php:2751
-msgid "Wishlist"
-msgstr ""
-
-#: includes/Admin/Metabox.php:2759
-msgid "Wishlist icon color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:2768
-msgid "Wishlist icon hover color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:781
-msgid "WishSuite – Wishlist for WooCommerce"
 msgstr ""
 
 #: includes/Admin/class.recommendation-plugin.php:58
@@ -2723,44 +824,6 @@ msgid ""
 "your WordPress site to improve the overall site performance."
 msgstr ""
 
-#: includes/Admin/Metabox.php:1647
-msgid "Wrapper background color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1687
-msgid "Wrapper border color."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1697
-msgid "Wrapper border radius."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1666
-msgid "Wrapper border style."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1657
-msgid "Wrapper border width."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1717
-msgid "Wrapper margin."
-msgstr ""
-
-#: includes/Admin/Metabox.php:1707
-msgid "Wrapper padding."
-msgstr ""
-
-#: includes/Admin/Metabox.php:314 includes/Admin/Metabox.php:993
-#: includes/Admin/Metabox.php:1064 includes/Admin/Metabox.php:1095
-#: includes/Admin/Metabox.php:1244 includes/Admin/Metabox.php:1473
-msgid "Yes"
-msgstr ""
-
-#: includes/Admin/Metabox.php:785
-msgid "YITH WooCommerce Quick View"
-msgstr ""
-
 #. 1: Product title 2: Product type
 #: includes/ajax-actions.php:126
 #, php-format
@@ -2779,6 +842,14 @@ msgstr ""
 msgid "You cannot add \"%s\" to the cart because the product is out of stock."
 msgstr ""
 
+#. 1: Product title 2: Product stock amount
+#: includes/ajax-actions.php:66
+#, php-format
+msgid ""
+"You cannot add that amount of \"%1$s\" to the cart because there is not "
+"enough stock (%2$s remaining)."
+msgstr ""
+
 #. %s: Product title
 #: includes/ajax-actions.php:54
 #, php-format
@@ -2789,7 +860,8 @@ msgstr ""
 msgid "You May Also Like"
 msgstr ""
 
-#: includes/Admin/Diagnostic_Data.php:487
+#. %1$s: Project Name
+#: includes/Admin/Diagnostic_Data.php:493
 #, php-format
 msgid "🌟 Enhance Your %1$s Experience as a Valued Contributor!"
 msgstr ""
